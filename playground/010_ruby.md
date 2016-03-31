@@ -1,6 +1,6 @@
 # Similarities
 
-### syntax, blocks, much of stdlib
+### syntax, blocks, much of stdlib, enumerable
 ```playground
 p (1..5).to_a
   .sort { |a,b| b<=>a}
