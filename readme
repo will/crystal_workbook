@@ -1,0 +1,3 @@
+this is the crystal workbook for my ruby on ales 2016 talk
+
+use a version of crystal > 0.14.2 (as of today march 31, 2016 no such version exists) and run `crystal play`
