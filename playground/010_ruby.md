@@ -30,6 +30,8 @@ class A; def b; 2 end end
 A.new.b
 ```
 
+even stdlib
+
 ### modules, mixins
 ```playground
 module C; def c; 'c' end end

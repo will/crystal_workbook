@@ -4,13 +4,14 @@
 @[Link(ldflags: "-lpq -L`pg_config --libdir`")]
 lib LibPQ
   fun connect = PQconnectdb(
-    conninfo : UInt8*) : Void*
+      conninfo : UInt8*
+  ) : Void*
   fun exec = PQexec(
     conn : Void*, query : UInt8*
-    ) : Void*
+  ) : Void*
   fun getvalue = PQgetvalue(
-    res : Void*, row : Int32,
-    column : Int32) : UInt8*
+    res : Void*, row : Int32, column : Int32
+  ) : UInt8*
 end
 
 conn = LibPQ.connect("postgres:///")
