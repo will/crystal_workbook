@@ -63,5 +63,12 @@ class Regex
 end
 ```
 
+#### I recently had new gutters installed,
+```playground
+require "base64"
+puts Base64.decode_string "dGhlIGNhcnBlbnRlciBzYWlkIGl0IHdhcyBvbiB0aGUgaG91c2U="
+```
+
+
 # [profiling](060_prof)
 

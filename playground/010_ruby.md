@@ -78,4 +78,11 @@ end
 files, classes, get up to speed quickly
 
 
+#### How do construction workers party?
+
+```playground
+require "base64"
+puts Base64.decode_string("VGhleSByYWlzZSB0aGUgcm9vZiE=")
+```
+
 # [so what, is this literally just the same thing as ruby?](020_differences)

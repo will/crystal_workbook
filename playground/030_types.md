@@ -125,5 +125,11 @@ b.first.first + 100
 ```
 
 
+#### What nails do carpenters hate hammering?
+
+```playground
+require "base64"
+puts Base64.decode_string "ZmluZ2VybmFpbHM=\n"
+```
 
 # [macros](040_macros)

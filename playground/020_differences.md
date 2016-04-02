@@ -45,5 +45,12 @@ a.map(&.reverse.upcase)
 a.map( &.split(//).sort.join )
 ```
 
+
+#### I watched a documentary about how they fix steelwork last night.
+
+```playground
+require "base64"
+puts Base64.decode_string "SXQgd2FzIHJpdmV0aW5nIQ==\n"
+```
 # [about those types](030_types)
 

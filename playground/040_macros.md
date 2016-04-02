@@ -46,4 +46,11 @@ Wed Dec  9 12:09:51 JST 2015
 Wed Dec  9 12:11:01 JST 2015
 ```
 
+
+#### What kind of sharks make good carpenters?
+```playground
+require "base64"
+puts Base64.decode_string "aGFtbWVyaGVhZHM="
+```
+
 # [linking](050_linking)
