@@ -22,17 +22,20 @@ p String.new(LibPQ.getvalue(res, 0, 0))
 
 ```
 /tmp ➤ crystal build -s pg.cr
-Parse:                             00:00:00.0386820 (  14.78MB)
-Semantic (top level):              00:00:00.0169190 (  19.71MB)
-Semantic (abstract def check):     00:00:00.0006860 (  19.71MB)
-Semantic (type declarations):      00:00:00.0011720 (  19.71MB)
-Semantic (initializers):           00:00:00.0005080 (  19.71MB)
-Semantic (main):                   00:00:00.0451050 (  26.34MB)
-Semantic (cleanup):                00:00:00.0000070 (  26.34MB)
-Semantic (recursive struct check): 00:00:00.0002040 (  26.34MB)
-Codegen (crystal):                 00:00:00.0547680 (  26.34MB)
-Codegen (bc+obj):                  00:00:00.4335010 (  26.34MB)
-Codegen (linking):                 00:00:00.0354350 (  26.34MB)
+Parse:                             00:00:00.0419650 (  11.85MB)
+Semantic (top level):              00:00:00.0246300 (  21.07MB)
+Semantic (new):                    00:00:00.0005490 (  21.07MB)
+Semantic (abstract def check):     00:00:00.0005730 (  21.07MB)
+Semantic (type declarations):      00:00:00.0049110 (  21.07MB)
+Semantic (cvars initializers):     00:00:00.0007150 (  21.07MB)
+Semantic (ivars initializers):     00:00:00.0003280 (  21.07MB)
+Semantic (main):                   00:00:00.0475250 (  28.16MB)
+Semantic (cleanup):                00:00:00.0000290 (  28.16MB)
+Semantic (recursive struct check): 00:00:00.0002890 (  28.16MB)
+
+Codegen (crystal):                 00:00:00.0201080 (  28.16MB)
+Codegen (bc+obj):                  00:00:00.1798460 (  28.16MB)
+Codegen (linking):                 00:00:00.0406390 (  28.16MB)
 /tmp ➤ otool -L pg
 pg:
   /usr/local/opt/postgresql/lib/libpq.5.dylib (compatibility version 5.0.0, current version 5.8.0)
