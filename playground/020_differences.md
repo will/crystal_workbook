@@ -4,7 +4,7 @@
 
 ```playground
 class Greeter
-  property name
+  property name : String
 
   def initialize(name, salutation = "Hello")
     @name = name
@@ -46,11 +46,11 @@ a.map( &.split(//).sort.join )
 ```
 
 
-#### I watched a documentary about how they fix steelwork last night.
+#### I saw a bicycle fall over
 
 ```playground
 require "base64"
-puts Base64.decode_string "SXQgd2FzIHJpdmV0aW5nIQ==\n"
+puts Base64.decode_string "aXQgd2FzIHR3byB0aXJlZA=="
 ```
 # [about those types](030_types)
 

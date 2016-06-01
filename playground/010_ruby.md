@@ -10,7 +10,7 @@ p (1..5).to_a
 ### classes, oop, implicit return
 ```playground
 class Adder
-  def initialize(a)
+  def initialize(a : Int32)
     @a = a
   end
 
@@ -55,6 +55,7 @@ do_something unless you_shouldnt?
 
 ```playground
 class Foo
+  @memo : Int32?
   def a(i)
     @memo ||= i * i
   end
@@ -78,11 +79,11 @@ end
 files, classes, get up to speed quickly
 
 
-#### How do construction workers party?
+#### A couple asked me if I wanted to go camping at yosemite with them
 
 ```playground
 require "base64"
-puts Base64.decode_string("VGhleSByYWlzZSB0aGUgcm9vZiE=")
+puts Base64.decode_string("SXQgc291bmRlZCB0d28gaW50ZW5zZQ==")
 ```
 
 # [so what, is this literally just the same thing as ruby?](020_differences)

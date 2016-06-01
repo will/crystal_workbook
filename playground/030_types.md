@@ -99,9 +99,9 @@ class Cat < Animal
 end
 
 class Person
-  getter pet
+  getter pet : Animal
 
-  def initialize(@name, @pet) end
+  def initialize(@name : String, @pet) end
 end
 
 will = Person.new "Will", Dog.new
@@ -125,7 +125,7 @@ b.first.first + 100
 ```
 
 
-#### What nails do carpenters hate hammering?
+#### What's the worst nails to hammer?
 
 ```playground
 require "base64"

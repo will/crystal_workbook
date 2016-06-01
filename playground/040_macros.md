@@ -47,10 +47,10 @@ Wed Dec  9 12:11:01 JST 2015
 ```
 
 
-#### What kind of sharks make good carpenters?
+#### What is base64 encoded?
 ```playground
 require "base64"
-puts Base64.decode_string "aGFtbWVyaGVhZHM="
+puts Base64.decode_string "dGhpcyB0ZXh0IHJpZ2h0IGhlcmU="
 ```
 
 # [linking](050_linking)
