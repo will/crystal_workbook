@@ -1,6 +1,11 @@
 # macros
 
+```playground
+  p (1..100).sum
+  pp (1..100).sum
 ```
+
+```playground
 class Object
   macro getter(*names)
     {% for name in names %}
