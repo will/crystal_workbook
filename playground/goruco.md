@@ -20,30 +20,19 @@
 
 # How fast
 
-### crystal
+### crystal                   ruby
 ```
-# Crystal 0.17.4
-# kemal-0.12.0
-require "kemal"
-
-get "/" do
-  "Hello World!"
-end
-
-Kemal.run
-```
-
-### ruby
-```
-# ruby 2.3.0p0
-# puma-3.4.0
-# sinatra-1.4.7
-
-require "sinatra"
-
-get "/" do
-  "Hello World!"
-end
+# Crystal 0.17.4    |    # ruby 2.3.0p0
+# kemal-0.12.0      |    # puma-3.4.0
+                    |    # sinatra-1.4.7
+                    |
+require "kemal"     |    require "sinatra"
+                    |
+get "/" do          |    get "/" do
+  "Hello World!"    |      "Hello World!"
+end                 |    end
+                    |
+Kemal.run           |
 ```
 
 ### wrk -d 1m
@@ -60,12 +49,10 @@ RSS 3.0 MB                      |  RSS 164.2 MB
 ```
 
 ## sidekiq
-"I started this project from scratch not knowing the language at all a week ago and had the core job processor running in 3 days."
-
+>"I started this project from scratch not knowing the language at all a week ago and had the core job processor running in 3 days."
 — http://www.mikeperham.com/2016/05/25/sidekiq-for-crystal/
 
-"Nearly identical to Sidekiq.rb but look at that execution time: 121µs! In real world code, I’m seeing Crystal execute 5-10x faster than MRI."
-
+>"Nearly identical to Sidekiq.rb but look at that execution time: 121µs! In real world code, I’m seeing Crystal execute 5-10x faster than MRI."
 — http://www.mikeperham.com/2016/06/14/test-driving-sidekiq-and-crystal/
 
 
@@ -73,13 +60,13 @@ RSS 3.0 MB                      |  RSS 164.2 MB
 # Similarities
 
 ### syntax, blocks, much of stdlib, enumerable
-### classes, oop, implicit return
+### classes, oop, implicit return, etc
 ```playground
 class Thing
- def go
-   (1..5).to_a
-    .sort { |a,b| b<=>a}
-    .reject { |a| a.even? }
+  def go
+    (1..5).to_a
+      .sort { |a,b| b<=>a}
+      .reject { |a| a.even? }
   end
 end
 
