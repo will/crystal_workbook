@@ -1,18 +1,19 @@
 # Will Leinweber
 
-* @leinweber
-* bitfission.com
-* citusdata.com
+### @leinweber
+### bitfission.com
+### citusdata.com
 
 ## Crystal
 
-* large contributor
-* github.com/will/crystal-pg
+### contributor
+### github.com/will/crystal-pg
 
-# Crystal
+# What is Crystal
 
 * ruby inspired
 * compiled with llvm
+* self hosted
 * static types static dispatch
 * still feels rubyish
 * very fast
@@ -256,15 +257,9 @@ end
 ```playground
 @[Link(ldflags: "-lpq -L`pg_config --libdir`")]
 lib LibPQ
-  fun connect = PQconnectdb(
-      conninfo : UInt8*
-  ) : Void*
-  fun exec = PQexec(
-    conn : Void*, query : UInt8*
-  ) : Void*
-  fun getvalue = PQgetvalue(
-    res : Void*, row : Int32, column : Int32
-  ) : UInt8*
+  fun connect = PQconnectdb( conninfo : UInt8*) : Void*
+  fun exec = PQexec( conn : Void*, query : UInt8*) : Void*
+  fun getvalue = PQgetvalue( res : Void*, row : Int32, column : Int32) : UInt8*
 end
 
 conn = LibPQ.connect("postgres:///")
@@ -317,8 +312,6 @@ String.build { |io|
 }.to_s
 ```
 
-### formatter
-
 ### concurrency
 
 ``` playground
@@ -335,6 +328,7 @@ end
 Fiber.yield
 ```
 
+## `brew install crystal-lang`
 ## [crystal-lang.org/docs](crystal-lang.org/docs)
+## [github.com/will/crystal_workbook](h[github.com/will/crystal_workbook)
 ## @leinweber
-
