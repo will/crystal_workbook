@@ -1,9 +1,5 @@
-This is the crystal workbook for my Ruby on Ales 2016 talk.
+This is the crystal workbook.
 
-With a version of crystal >= 0.15.0, go to the root of this project and run
+With a version of crystal >= 0.18.0, go to the root of this project and run
 `crystal play`, then go to `localhost:8080/workbook` in your browser.
 
-If you're curious about the construction jokes, the theme for the second day
-of the conference was constructionneering.
-
-The video of the talk will be at http://confreaks.tv/events/roa2016
