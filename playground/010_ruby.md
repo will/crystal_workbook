@@ -25,19 +25,19 @@ a.add(2)
 ### open classes
 
 ```playground
-class A; def b; 1 end end
-class A; def b; 2 end end
-A.new.b
+class Aa; def b; 1 end end
+class Aa; def b; 2 end end
+Aa.new.b
 ```
 
 even stdlib
 
 ### modules, mixins
 ```playground
-module C; def c; 'c' end end
-class A; extend C end
-class B; extend C end
-A.c == B.c
+module Cc; def c; 'c' end end
+class Aa; extend Cc end
+class Bb; extend Cc end
+Aa.c == Bb.c
 ```
 
 ### idioms
